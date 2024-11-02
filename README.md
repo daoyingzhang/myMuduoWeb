@@ -5,3 +5,8 @@
 现在只是提供了两个模块的测试代码，主要是没时间搞了。
 如果想要运行的话，记得把数据库连接的那个位置换成你自己的，要不然注册和登录的时候会失败。
 之后直接./build.sh即可。
+
+
+
+## 以下是我的测试样例
+![image](https://github.com/user-attachments/assets/6fdf0ac8-54fb-47e1-a4a5-c52bc1f261af)

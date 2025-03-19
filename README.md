@@ -23,9 +23,18 @@
 ![image](https://github.com/user-attachments/assets/5b3e0905-d0cb-4848-a87e-774075293f4c)
 
 #### 图片界面
-这个记得缩小以下页面，我前段对图片大小的设置不是很好。
-![image](https://github.com/user-attachments/assets/881058a4-1783-4e9d-b6a3-92ce61156d88)
+![image](https://github.com/user-attachments/assets/18b04452-9273-4f51-ad97-ab6a2bd6c58f)
 
 #### 视频界面 
-
 这个只需要换到xxx.mp4一个合适的视频就可以，我用的是我的世界的录屏，打不开，有时间改一下，但是没错误。
+
+#### 用webbench进行的压力测试界面
+  结果跟设置的subLoop数量有很大关系，我这个是随便设置了一个。
+![image](https://github.com/user-attachments/assets/c5f18ed0-2836-4654-ae73-d86d46142aec)
+
+#### 日志打印
+  这个最后的FATAL等级我实现一直报错，需要再考虑下问题出在什么地方了。
+![image](https://github.com/user-attachments/assets/3263625a-27c2-4849-bc67-4c1b600b1d92)
+
+
+

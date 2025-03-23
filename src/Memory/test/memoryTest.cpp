@@ -1,5 +1,6 @@
-#include "MemoryPool.h"
-#include <iostream>
+// #include "MemoryPool.h"
+#include "Memory.h"
+
 #include <vector>
 #include <chrono>
 #include <stdio.h>
@@ -135,13 +136,45 @@ void test2()
     cout << endl;
 }
 
+void test3(){
+    MemoryPool pool; 
+    pool.createPool();
+    int *ptr=(int*)pool.malloc(5*sizeof(int));
+    ptr[5]=10;
+    cout<<ptr[5]<<endl;
+}
+int test4(){
+    int *ptr = (int*)malloc(5 * sizeof(int));
+    if (!ptr) return -1;
+
+    ptr[1000] = 999; // 
+    printf("Data: %d\n", ptr[1000]);
+
+    free(ptr);
+    return 0;
+}
+
+
+void test5(){
+    Memory mem;
+    MemoryView<int> arr = mem.allocate<int>(10);
+    arr[1]=10;
+    arr[2]=11;
+    cout<<arr[1]<<arr[2]<<endl;
+    mem.deallocate(arr);
+    std::cout<<"删除了分配的空间"<<endl;
+    MemoryView<int> arr1 = mem.allocate<int>(2);
+    arr1[1]=10;
+    cout<<arr1[1]<<endl;
+    arr1[11]=10;
+}
 int main()
 {
-    test1();
-
-    cout<<"###################################"<<endl;
-    test2();
-    
-
+    // test1();
+    // cout<<"###################################"<<endl;
+    // test2();
+    // test3();
+    // test4();
+    test5();
     return 0;
 }

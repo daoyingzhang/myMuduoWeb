@@ -18,6 +18,6 @@ Memory::~Memory(){
 }
 
 void Memory::resetPool(){
-    std::lock_guard<std::mutex> locker(poolMutex_);
+    std::lock_guard<std::shared_mutex> locker(poolMutex_);
     pool_.resetPool();
 }
